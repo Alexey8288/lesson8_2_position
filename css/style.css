@@ -1,0 +1,92 @@
+.test {
+    /* width: 500px;
+    height: 200px; */
+    background-color: red;
+    /* по умолчанию эти свойства не будут работать */
+    /* top: 200px;
+    left: 200px; */
+
+    /* делает прозрачность объекту */
+    opacity: 0.5;
+
+
+    /* блок становится выше всего остального, позиционируется от видимой области экрана */
+    /* но его можно пролистать */
+    /* position: absolute; */
+    /* можно задать расмеры указав только отступы по сторонам */
+    /* top: 500px;
+    right: 100px;
+    bottom: 100px;
+    left: 100px; */
+
+    /* но его нельзя пролистать */
+    /* position: fixed; */
+
+    /* для надписи внутри блока */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+
+
+    /* width: 500px;
+            height: 200px; */
+}
+
+
+/* для этого свойства position: relative; */
+/* z-index меняет слои местами*/
+.one {
+    position: relative;
+    background-color: green;
+    font-size: 100px;
+     color: white;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+}
+
+.two {
+    position: relative;
+    background-color: blue;
+    font-size: 100px;
+    color: white;
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: 100px;
+    z-index: -1;
+}
+
+.three {
+    position: relative;
+    background-color: orange;
+    font-size: 100px;
+    color: white;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: 200px;
+    z-index: -2;
+}
+
+/* фиксированное меню сверху экрана */
+
+.menu {
+background-color: orange;
+font-size: 100px;
+    color: white;
+    height: 100px;
+    position: fixed;
+/* создает ширину */
+    left: 0;
+    right: 0;
+    /* привязывает к любому месту, у нас верх */
+    top: 0;
+}
+
+.container {
+/* ставим отступ сверху экрана */
+    margin-top: 120px;
+}
